@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Segurança: Proteja-se contra Golpes Bancários</title>
+    <style>
+        :root {
+            --primary: #1a2a3a;
+            --danger: #d32f2f;
+            --accent: #007bff;
+            --bg: #f0f2f5;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--primary);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 { 
+            color: var(--danger); 
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* --- SEÇÃO DO PANFLETO EM DESTAQUE --- */
+        .panfleto-wrapper {
+            text-align: center;
+            margin: 40px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .panfleto-img {
+            width: 100%; /* Ocupa toda a largura do container */
+            max-width: 850px; /* Limite para não perder qualidade */
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            border: 1px solid #eee;
+        }
+
+        /* --- CONTEÚDO EDUCATIVO --- */
+        .info-section {
+            margin-top: 50px;
+            padding: 30px;
+            border-top: 2px solid #eee;
+        }
+
+        .warning-card {
+            background: #fff3f3;
+            border-left: 8px solid var(--danger);
+            padding: 25px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .tips-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tips-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .tips-list li::before {
+            content: "❌";
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        /* Botão de ação opcional */
+        .btn-call {
+            display: inline-block;
+            background: var(--danger);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-call:hover {
+            background: #b71c1c;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>CUIDADO COM O GOLPE!</h1>
+        <p class="subtitle">Não clique em links suspeitos. Proteja seus dados e seu dinheiro.</p>
+    </header>
+
+    <div class="panfleto-wrapper">
+        <img src="puc.jpg" alt="Panfleto Informativo de Segurança Bancária" class="panfleto-img">
+    </div>
+
+    <section class="info-section">
+        <div class="warning-card">
+            <h3>🚩 Como os criminosos agem?</h3>
+            <p>Eles enviam mensagens falsas fingindo ser o seu banco, informando sobre uma "compra suspeita" ou "bloqueio de conta". O objetivo é fazer você clicar em um link e entregar sua senha ou token.</p>
+        </div>
+
+        <h3>Dicas de Ouro para não cair no golpe:</h3>
+        <ul class="tips-list">
+            <li><strong>Desconfie de Urgência:</strong> O banco nunca vai te pressionar a tomar uma decisão em minutos por SMS.</li>
+            <li><strong>Analise o Remetente:</strong> Mensagens de números de celular comuns (com DDD) geralmente são golpes. Bancos usam números de 5 ou 6 dígitos.</li>
+            <li><strong>Nunca forneça Senhas:</strong> Nenhum link oficial vai pedir sua senha de 4 ou 6 dígitos, nem o código de segurança (CVV).</li>
+            <li><strong>Use o Aplicativo:</strong> Se estiver na dúvida, feche a mensagem e abra o aplicativo oficial do seu banco diretamente no seu celular.</li>
+        </ul>
+
+        <div style="text-align: center;">
+            <a href="#" class="btn-call" onclick="window.print()">Imprimir este Guia</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 - Guia de Conscientização Digital. Compartilhe esta informação com seus familiares.</p>
+    </footer>
+</div>
+
+</body>
+</html>
